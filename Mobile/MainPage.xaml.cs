@@ -19,8 +19,8 @@ namespace Mobile
         }
         private void Se_connecter(object sender,EventArgs e)
         {
-            
 
+            TwitterService test = new TwitterService();
             this.cacherMessage();
             if (this.Identifiant.Text==null|| this.Identifiant.Text.Length<3 || string.IsNullOrEmpty(this.Identifiant.Text.ToString()))
             {
@@ -30,6 +30,11 @@ namespace Mobile
             else if (this.MDP.Text == null || this.MDP.Text.Length < 6 || string.IsNullOrEmpty(this.MDP.Text.ToString()))
             {
                 this.afficherMessage("il faut au moins 6 caractères pour le mot de passe");
+            }
+
+            else if (test.authenticate(this.Identifiant.Text,this.MDP.Text)==false)
+            {
+                this.afficherMessage("identifiant ou mot de passe incor");
             }
 
             else
