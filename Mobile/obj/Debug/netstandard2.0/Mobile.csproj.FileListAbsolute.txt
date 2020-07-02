@@ -1,0 +1,14 @@
+C:\Users\figar\source\repos\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.deps.json
+C:\Users\figar\source\repos\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.dll
+C:\Users\figar\source\repos\Mobile\Mobile\bin\Debug\netstandard2.0\ref\Mobile.dll
+C:\Users\figar\source\repos\Mobile\Mobile\bin\Debug\netstandard2.0\Mobile.pdb
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfoInputs.cache
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.AssemblyInfo.cs
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csproj.CoreCompileInputs.cache
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.dll
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\ref\Mobile.dll
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.pdb
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csprojAssemblyReference.cache
