@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile.MainPage">
+
+    <StackLayout>
+
+        <ContentView BackgroundColor="#58B0F0">
+            <StackLayout Orientation="Horizontal" Margin="10, 25">
+                <Label Text="Nouveau" VerticalTextAlignment="Center"></Label>
+                <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"></Label>
+                <Label Text="Rechercher" VerticalTextAlignment="Center"></Label>
+            </StackLayout>
+        </ContentView>
+        
+        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
+                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. " TextColor="Black"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Label HorizontalOptions="FillAndExpand" Text="Répondre" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                        <Label HorizontalOptions="FillAndExpand" Text="Retweet" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                        <Label HorizontalOptions="FillAndExpand" Text="Favoris" HorizontalTextAlignment="Center" TextColor="Black"></Label>
+                    </StackLayout>
+                    <ContentView HeightRequest="0.5" BackgroundColor="WhiteSmoke" HorizontalOptions="FillAndExpand"></ContentView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        
+        <StackLayout Orientation="Horizontal" Margin="10, 25">
+            <Label Text="Fil" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+            <Label Text="Notification" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+            <Label Text="Message" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+            <Label Text="Moi" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+        </StackLayout>
+
+
+
+    </StackLayout>
+
+</ContentPage>

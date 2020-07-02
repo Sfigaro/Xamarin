@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "M2s3W2Sh8Zd4getlnXTctz61nujgTmLcoOcy8uVcPZ/GKErCeIuDYlD9XdAyoS5Yug1Om8a7gAAMPGOO6Akz8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\figar\\source\\repos\\Mobile\\Mobile\\Mobile.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\figar\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\figar\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\figar\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}
