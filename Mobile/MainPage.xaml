@@ -18,20 +18,22 @@
         </ContentView>
 
 
-        <StackLayout Orientation="Vertical">
+        <StackLayout x:Name="form" IsVisible="true" Orientation="Vertical">
             <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
-            <Entry Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
-            <Entry Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
+            <Entry x:Name="Identifiant" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
+            <Entry x:Name="MDP" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
             <StackLayout Orientation="Horizontal">
-                <Switch></Switch>
+                <Switch x:Name="M_information"></Switch>
                 <Label Text="Mémoriser mes informations"></Label>
             </StackLayout>
-            <Button Text="Se connecter" HorizontalOptions="FillAndExpand"></Button>
+
+            <Label x:Name="erreur" TextColor="red" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" IsVisible="false"></Label>
+            <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Se_connecter"></Button>
         </StackLayout>
 
-        <ScrollView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+            <StackLayout x:Name="Twitte" IsVisible="false" Orientation="Vertical" HorizontalOptions="FillAndExpand">
                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
                     <ImageButton Source="start.jpg" Margin="10" WidthRequest="75" Aspect="AspectFit"></ImageButton>
                     <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">

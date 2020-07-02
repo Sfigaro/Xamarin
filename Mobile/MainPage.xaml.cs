@@ -17,5 +17,39 @@ namespace Mobile
         {
             InitializeComponent();
         }
+        private void Se_connecter(object sender,EventArgs e)
+        {
+            
+
+            this.cacherMessage();
+            if (this.Identifiant.Text==null|| this.Identifiant.Text.Length<3 || string.IsNullOrEmpty(this.Identifiant.Text.ToString()))
+            {
+                this.afficherMessage("il faut au moins 3 caractères pour identifiant");
+            }
+
+            else if (this.MDP.Text == null || this.MDP.Text.Length < 6 || string.IsNullOrEmpty(this.MDP.Text.ToString()))
+            {
+                this.afficherMessage("il faut au moins 6 caractères pour le mot de passe");
+            }
+
+            else
+            {
+                this.form.IsVisible = false;
+                this.Twitte.IsVisible = true;
+            }
+        }
+
+        public void cacherMessage()
+        {
+            this.erreur.IsVisible = false;
+        }
+
+        public void afficherMessage(string message)
+        {
+            this.erreur.IsVisible = true;
+            this.erreur.Text = message;
+        }
     }
+
+    
 }
