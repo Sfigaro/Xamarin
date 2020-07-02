@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Essentials;
 
 namespace Mobile
 {
@@ -22,7 +23,15 @@ namespace Mobile
 
             TwitterService test = new TwitterService();
             this.cacherMessage();
-            if (this.Identifiant.Text==null|| this.Identifiant.Text.Length<3 || string.IsNullOrEmpty(this.Identifiant.Text.ToString()))
+
+
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet) 
+            {
+                this.afficherMessage("pas de connexion internet");
+
+            }
+
+            else if (this.Identifiant.Text==null|| this.Identifiant.Text.Length<3 || string.IsNullOrEmpty(this.Identifiant.Text.ToString()))
             {
                 this.afficherMessage("il faut au moins 3 caractères pour identifiant");
             }
