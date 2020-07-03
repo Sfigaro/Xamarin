@@ -18,7 +18,7 @@ namespace Mobile
         {
             InitializeComponent();
         }
-        private void Se_connecter(object sender,EventArgs e)
+        private async void Se_connecter(object sender,EventArgs e)
         {
 
             TwitterService test = new TwitterService();
@@ -48,8 +48,7 @@ namespace Mobile
 
             else
             {
-                this.form.IsVisible = false;
-                this.Twitte.IsVisible = true;
+               await Navigation.PushAsync(new JeSuisConn());
             }
         }
 

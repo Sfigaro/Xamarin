@@ -12,3 +12,4 @@ C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.dll
 C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\ref\Mobile.dll
 C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.pdb
 C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\Mobile.csprojAssemblyReference.cache
+C:\Users\figar\source\repos\Mobile\Mobile\obj\Debug\netstandard2.0\JeSuisConn.xaml.g.cs

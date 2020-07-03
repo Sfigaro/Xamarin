@@ -480,3 +480,5 @@ C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\favo
 C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\pencil.png
 C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\reply.png
 C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\retweet.png
+C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\op.jpg
+C:\Users\figar\source\repos\Mobile\Mobile.Android\obj\Debug\90\res\drawable\f.jpg

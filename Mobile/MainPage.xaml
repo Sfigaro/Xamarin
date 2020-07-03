@@ -17,44 +17,22 @@
             </StackLayout>
         </ContentView>
 
-
-        <StackLayout x:Name="form" IsVisible="true" Orientation="Vertical">
-            <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
-            <Entry x:Name="Identifiant" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
-            <Entry x:Name="MDP" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
-            <StackLayout Orientation="Horizontal">
-                <Switch x:Name="M_information"></Switch>
-                <Label Text="Mémoriser mes informations"></Label>
-            </StackLayout>
-
-            <Label x:Name="erreur" TextColor="red" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" IsVisible="false"></Label>
-            <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Se_connecter"></Button>
-        </StackLayout>
-
         <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 
-            <StackLayout x:Name="Twitte" IsVisible="false" Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Margin="10">
-                    <ImageButton Source="start.jpg" Margin="10" WidthRequest="75" Aspect="AspectFit"></ImageButton>
-                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
-                        <StackLayout Orientation="Horizontal">
-                            <Label Text="Cedric" TextColor="Black"></Label>
-                            <Label Text="@cedricmillauriaux" TextColor="Black"></Label>
-                            <Label Text="50s" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
-                        </StackLayout>
-                        <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod convallis dolor. Quisque ultricies porttitor nunc venenatis facilisis. " TextColor="Black"></Label>
-                        
-                    </StackLayout>
-                    
-                </StackLayout>
+            <StackLayout x:Name="form"  Orientation="Vertical">
+                <Label Text="Connexion à Twitter" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"></Label>
+                <Entry x:Name="Identifiant" Placeholder="Identifiant Twitter" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Email" ReturnType="Next"/>
+                <Entry x:Name="MDP" Placeholder="Mot de passe" HorizontalOptions="FillAndExpand" MaxLength="50" Keyboard="Default" IsPassword="True" ReturnType="Next"/>
                 <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
-                    <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
-                    <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                    <Switch x:Name="M_information"></Switch>
+                    <Label Text="Mémoriser mes informations"></Label>
                 </StackLayout>
+
+                <Label x:Name="erreur" TextColor="red" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" IsVisible="false"></Label>
+                <Button Text="Se connecter" HorizontalOptions="FillAndExpand" Clicked="Se_connecter"></Button>
             </StackLayout>
 
-   
+
         </ScrollView>
         
         <StackLayout Orientation="Horizontal" Margin="10, 25">

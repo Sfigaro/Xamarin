@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Mobile.JeSuisConn">
+    <ContentPage.Content>
+        <StackLayout>
+            <ContentView BackgroundColor="#58B0F0">
+                <StackLayout Orientation="Horizontal" Margin="10, 25">
+                    <ImageButton Source="pencil.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+
+                    <Label Text="Accueil" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold" FontSize="20" TextColor="White"></Label>
+                    <ImageButton Source="search.png" WidthRequest="25" BackgroundColor="Transparent"></ImageButton>
+                </StackLayout>
+            </ContentView>
+
+
+            <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+                <StackLayout x:Name="Twitte" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                    <ListView x:Name="Liste">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout  Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                                            <Image Source="{Binding identifiant_utilisateur}" Margin="10" WidthRequest="75" Aspect="AspectFit"></Image>
+                                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+                                                <StackLayout Orientation="Horizontal">
+                                                    <Label Text="{Binding pseudo_utilisateur}" TextColor="Black"></Label>
+                                                    <Label Text="{Binding nom_utilisateur}" TextColor="Black"></Label>
+                                                    <Label Text="{Binding date_de_creation}" TextColor="Black" HorizontalOptions="EndAndExpand"></Label>
+                                                </StackLayout>
+                                                <Label Text="{Binding texte}" TextColor="Black"></Label>
+
+                                            </StackLayout>
+
+                                        </StackLayout>
+
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    
+                </StackLayout>
+
+            </ScrollView>
+
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="reply.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                <ImageButton Source="retweet.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+                <ImageButton Source="favorite.png" WidthRequest="25" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"></ImageButton>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" Margin="10, 25">
+                <Label Text="Fil" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+                <Label Text="Notification" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+                <Label Text="Message" VerticalTextAlignment="Center" HorizontalOptions="FillAndExpand"></Label>
+                <Label Text="Moi" VerticalTextAlignment="Center" ></Label>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
